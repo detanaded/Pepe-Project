@@ -2,7 +2,11 @@
   "name": "pepe-project",
   "version": "0.1.0",
   "private": true,
+  "main": "server/pepedex.js",
+  "proxy": "http://localhost:3500",
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
