@@ -1,0 +1,31 @@
+
+/* Hero Pepe Image Styling */
+.hero1{
+  width: 100%;
+  height: 60vh;
+  background-image: url('../PepePics/PepeBackground.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+h1 {
+  margin-top: 0;
+  color: white;
+  text-transform: capitalize;
+
+}
+
+.main-body {
+  background-color: #346b36;
+
+}
+
+.btn-body input {
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+}

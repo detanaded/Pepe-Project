@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import ShowPepe from './ShowPepe';
+import './CSS/Hero.css';
+import {bounceIn} from 'react-animations';
+import styled, {keyframes} from 'styled-components';
+
+const Bounce = styled.div`animation: 3s ${keyframes`${bounceIn}`} infinite `;
 
 
 class Pepe extends Component {
@@ -68,9 +73,11 @@ handleName(val){
             )
         })
         return(
-            <div className='pepe-flex'>
-                <div className='pepe-div'/>
-                <div>
+            <div className='main-body'>
+              <div className='hero1'>
+              <Bounce><h1>meme'in since 05</h1></Bounce>
+                </div>
+              <div className='btn-body'>
                     <input 
                         onChange={(e) => this.handleName(e.target.value)}
                         value={this.state.pepeName}
